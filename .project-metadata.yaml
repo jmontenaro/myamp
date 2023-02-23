@@ -1,0 +1,25 @@
+name: MyAMP
+description: Custom Baseline AMP
+author: Joe Montenaro
+specification_version: 1.0
+prototype_version: 1.0
+
+runtimes:
+  - editor: Workbench
+    kernel: Python 3.7
+    edition: Standard
+
+environment_variables:
+  GIT_REPO_URL:
+    default: ""
+    description: "Access Key ID for accessing S3 bucket"
+
+tasks:
+  - type: create_job
+    name: Set GIT Repo URL
+    entity_label: set_git_repo_url
+    script: utils/set_git_repo_url.py
+    arguments: None
+    cpu: 1
+    memory: 2
+    short_summary: Create job to set the GIT repo URL.
