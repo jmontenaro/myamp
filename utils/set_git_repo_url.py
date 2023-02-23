@@ -1,2 +1,1 @@
-print("Hello world")
-!git config --get remote.origin.url
+!git remote set-url origin $GIT_REPO_URL
