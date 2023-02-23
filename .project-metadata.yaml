@@ -2,7 +2,7 @@ name: MyAMP
 description: Custom Baseline AMP
 author: Joe Montenaro
 specification_version: 1.0
-prototype_version: 1.0.3
+prototype_version: 1.0.5
 
 runtimes:
   - editor: Workbench
@@ -17,8 +17,7 @@ environment_variables:
 tasks:
 - type: run_session
   name: Set GIT Repo URL
-  code: |
-    !git remote set-url origin $GIT_REPO_URL
+  code: !git remote set-url origin $GIT_REPO_URL
   kernel: python3
   memory: 1
   cpu: 1
