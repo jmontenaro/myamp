@@ -15,11 +15,10 @@ environment_variables:
     description: "Target repo URL"
 
 tasks:
-  - type: create_job
-    name: Set GIT Repo URL
-    entity_label: set_git_repo_url
-    script: utils/set_git_repo_url.py
-    arguments: None
-    cpu: 1
-    memory: 2
-    short_summary: Create job to set the GIT repo URL.
+- type: run_session
+  name: Set GIT Repo URL
+  script: utils/set_git_repo_url.py
+  kernel: python3
+  memory: 1
+  cpu: 1
+  gpu: 0
