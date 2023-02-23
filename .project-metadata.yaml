@@ -12,7 +12,7 @@ runtimes:
 environment_variables:
   GIT_REPO_URL:
     default: ""
-    description: "Access Key ID for accessing S3 bucket"
+    description: "Target repo URL"
 
 tasks:
   - type: create_job
