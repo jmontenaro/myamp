@@ -2,7 +2,7 @@ name: MyAMP
 description: Custom Baseline AMP
 author: Joe Montenaro
 specification_version: 1.0
-prototype_version: 1.0.1
+prototype_version: 1.0.2
 
 runtimes:
   - editor: Workbench
